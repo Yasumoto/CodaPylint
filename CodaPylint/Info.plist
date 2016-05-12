@@ -23,6 +23,16 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016 Joe Smith. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string></string>
+	<string>PylintPlugin</string>
+	<key>CodaPlugInSupportedAPIVersion</key>
+	<integer>7</integer>
+	<key>CodaAuthorString</key>
+	<string>Joe Smith</string>
+	<key>CodaDescriptionString</key>
+	<string>Pylint https://github.com/Yasumoto/CodaPylint</string>
+	<key>CodaPlugInMinimumAPIVersion</key>
+	<string>7</string>
+	<key>CodaIconMaskTintString</key>
+	<string>#2d5aff</string>
 </dict>
 </plist>

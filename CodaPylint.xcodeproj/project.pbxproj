@@ -6,9 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A17135DE1CDD81D90090B00C /* PylintPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A17135DD1CDD81D90090B00C /* PylintPlugin.m */; };
+		A1E454151CE3B9D1009B5A24 /* Linter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E454141CE3B9D1009B5A24 /* Linter.m */; };
+		A1F352261CE3AFC2008A382E /* Runner.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F352251CE3AFC2008A382E /* Runner.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		A17135D21CDD80B40090B00C /* CodaPylint.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodaPylint.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17135D21CDD80B40090B00C /* CodaPylint.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodaPylint.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17135D51CDD80B40090B00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17135DB1CDD81940090B00C /* CodaPluginsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodaPluginsController.h; sourceTree = "<group>"; };
+		A17135DD1CDD81D90090B00C /* PylintPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PylintPlugin.m; sourceTree = "<group>"; };
+		A1E454131CE3B9D1009B5A24 /* Linter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Linter.h; sourceTree = "<group>"; };
+		A1E454141CE3B9D1009B5A24 /* Linter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Linter.m; sourceTree = "<group>"; };
+		A1F352241CE3AFC2008A382E /* Runner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runner.h; sourceTree = "<group>"; };
+		A1F352251CE3AFC2008A382E /* Runner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +45,7 @@
 		A17135D31CDD80B40090B00C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A17135D21CDD80B40090B00C /* CodaPylint.bundle */,
+				A17135D21CDD80B40090B00C /* CodaPylint.codaplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -42,6 +54,12 @@
 			isa = PBXGroup;
 			children = (
 				A17135D51CDD80B40090B00C /* Info.plist */,
+				A17135DB1CDD81940090B00C /* CodaPluginsController.h */,
+				A17135DD1CDD81D90090B00C /* PylintPlugin.m */,
+				A1E454131CE3B9D1009B5A24 /* Linter.h */,
+				A1E454141CE3B9D1009B5A24 /* Linter.m */,
+				A1F352241CE3AFC2008A382E /* Runner.h */,
+				A1F352251CE3AFC2008A382E /* Runner.m */,
 			);
 			path = CodaPylint;
 			sourceTree = "<group>";
@@ -63,7 +81,7 @@
 			);
 			name = CodaPylint;
 			productName = CodaPylint;
-			productReference = A17135D21CDD80B40090B00C /* CodaPylint.bundle */;
+			productReference = A17135D21CDD80B40090B00C /* CodaPylint.codaplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -112,6 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17135DE1CDD81D90090B00C /* PylintPlugin.m in Sources */,
+				A1E454151CE3B9D1009B5A24 /* Linter.m in Sources */,
+				A1F352261CE3AFC2008A382E /* Runner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +229,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bjoli.CodaPylint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = codaplugin;
 			};
 			name = Debug;
 		};
@@ -221,7 +242,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bjoli.CodaPylint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = codaplugin;
 			};
 			name = Release;
 		};
@@ -244,6 +265,7 @@
 				A17135DA1CDD80B40090B00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

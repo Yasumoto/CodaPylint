@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A17135D11CDD80B40090B00C"
-               BuildableName = "CodaPylint.bundle"
+               BuildableName = "CodaPylint.codaplugin"
                BlueprintName = "CodaPylint"
                ReferencedContainer = "container:CodaPylint.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A17135D11CDD80B40090B00C"
-            BuildableName = "CodaPylint.bundle"
+            BuildableName = "CodaPylint.codaplugin"
             BlueprintName = "CodaPylint"
             ReferencedContainer = "container:CodaPylint.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A17135D11CDD80B40090B00C"
-            BuildableName = "CodaPylint.bundle"
+            BuildableName = "CodaPylint.codaplugin"
             BlueprintName = "CodaPylint"
             ReferencedContainer = "container:CodaPylint.xcodeproj">
          </BuildableReference>
